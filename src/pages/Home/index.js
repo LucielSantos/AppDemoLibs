@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import ButtonLottie from '../components/ButtonLottie'
+import ButtonLottie from '../../components/ButtonLottie'
 
 import styles from './styles';
 
