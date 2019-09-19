@@ -12,9 +12,9 @@ import ButtonLottie from '../../components/ButtonLottie'
 
 import styles from './styles';
 
-import logoReact from '../assets/logoReact/logoReact.png';
+import logoReact from '../../assets/logoReact/logoReact.png';
 
-const App = () => {
+const App = ({ navigation }) => {
   return (
     <SafeAreaView style={ styles.container }>
         <View style={ styles.header }>
@@ -30,7 +30,8 @@ const App = () => {
         
         <View style={ styles.content}>
           {/* Buttons: */}
-          <ButtonLottie />
+          <ButtonLottie onPress= { () => navigation.navigate('Lottie') } />
+
         </View>
       </ScrollView>
     </SafeAreaView>

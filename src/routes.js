@@ -1,11 +1,13 @@
-import { createAppContainer } from   'react-navigation';
-import { createStackNavigator } from   'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-import Home from './Home';
+import Home from './pages/Home';
+import Lottie from './pages/Lottie'
 
 const routes = createAppContainer(
     createStackNavigator({
-        Home
+        Home,
+        Lottie,
     },{
         headerMode: "none"
     })
