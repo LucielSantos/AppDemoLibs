@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -8,15 +8,17 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import ButtonLottie from '../components/ButtonLottie'
+
 import styles from './styles';
 
-import logo from '../assets/logoReact/logoReact.png';
+import logoReact from '../assets/logoReact/logoReact.png';
 
 const App = () => {
   return (
     <SafeAreaView style={ styles.container }>
         <View style={ styles.header }>
-          <Image style={ styles.logoReact } source = { logo }/>
+          <Image style={ styles.logoReact } source = { logoReact }/>
 
           <View style={ styles.containerHeader } >
 
@@ -27,8 +29,8 @@ const App = () => {
       <ScrollView>
         
         <View style={ styles.content}>
-           {/* Buttons: */}
-           
+          {/* Buttons: */}
+          <ButtonLottie />
         </View>
       </ScrollView>
     </SafeAreaView>
