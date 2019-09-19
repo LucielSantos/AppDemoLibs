@@ -27,10 +27,8 @@ const App = () => {
       <ScrollView>
         
         <View style={ styles.content}>
-          <TouchableOpacity style={ styles.button }>
-            <Text style={ styles.textButton }>AXIOS</Text>
-
-          </TouchableOpacity>
+           {/* Buttons: */}
+           
         </View>
       </ScrollView>
     </SafeAreaView>
